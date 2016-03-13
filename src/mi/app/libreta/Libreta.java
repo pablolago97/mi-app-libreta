@@ -8,7 +8,7 @@ package mi.app.libreta;
 import javax.swing.JOptionPane;
 
 /**
- *Indica 'getters' y 'setters'
+ *Indica todos los métodos a los que la 'main' hace referencia
  * @author Pablo
  */
 public class Libreta {
