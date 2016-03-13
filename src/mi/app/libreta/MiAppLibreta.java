@@ -8,7 +8,7 @@ package mi.app.libreta;
 import javax.swing.JOptionPane;
 
 /**
- *
+ *Clase 'Main' de la App
  * @author Pablo
  */
 public class MiAppLibreta {
@@ -20,6 +20,7 @@ public class MiAppLibreta {
         
         Libreta libreta = new Libreta();
         boolean condicion = true;
+       
         do{
         int seleccion = Integer.parseInt(JOptionPane.showInputDialog("1)Engadir contacto\n2)Listar contactos\n3)Borrar contacto\n5)Crear grupo\n6)Añadir contacto a grupo\n7)Salir"));
         switch(seleccion){

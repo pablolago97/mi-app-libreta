@@ -8,7 +8,7 @@ package mi.app.libreta;
 import javax.swing.JOptionPane;
 
 /**
- *
+ *Indica 'getters' y 'setters'
  * @author Pablo
  */
 public class Libreta {
@@ -17,7 +17,10 @@ public class Libreta {
     private final Grupo[] grupos = new Grupo[10];
     
     
-    
+    /**
+     * Recive el parametro contacto y lo añade dependiendo del contador
+     * @param contacto 
+     */
     public void engadir(Contacto contacto){
         boolean libretaLlena=true;
         for(int i=0;i<contactos.length;i++){
@@ -33,6 +36,9 @@ public class Libreta {
         }
     }
     
+    /**
+     * Este añado un contacto desde el TECLADO
+     */
     public void engadir(){
         boolean libretaLlena=true;
         for(int i=0;i<contactos.length;i++){
@@ -49,6 +55,10 @@ public class Libreta {
         }
     }
     
+    /**
+     * Recive  los elementos de contacto y mediante un 'for...each' lo recorre y lo imprime
+     */
+    
     public void listar(){
         String cadena="";
         for(Contacto elemento:contactos){
@@ -59,6 +69,9 @@ public class Libreta {
         JOptionPane.showMessageDialog(null,cadena);
     }
     
+    /**
+     * Borra un contacto
+     */
       public void borrar(){
         boolean notFound = true;
         int id = Integer.parseInt(JOptionPane.showInputDialog("Introduzca el id del contacto que desea borrar:"));
@@ -77,6 +90,9 @@ public class Libreta {
         }
     }
     
+     /**
+      * Crea un grupo. Recibe el nombre por teclado y la longitud del array determina su tamaño
+      */
     public void crearGrupo(){
         boolean grupoLleno = true;
         String nombre = JOptionPane.showInputDialog("Introduce el nombre del grupo");
@@ -92,6 +108,10 @@ public class Libreta {
             JOptionPane.showMessageDialog(null, "Límite de grupos alcanzado");
         }
     }
+    
+    /**
+     * Agrega una entidad a un grupo que recoje por teclado
+     */
     
     public void agregarAGrupo(){
         boolean contactoEncontrado = false ,grupoEncontrado = false;

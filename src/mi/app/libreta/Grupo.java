@@ -6,10 +6,11 @@
 package mi.app.libreta;
 
 /**
- *
+ *Indica 'getters' y 'setters'
  * @author Pablo
  */
 public class Grupo {
+    
     private String nombre;
     private Contacto[] contactos;
     

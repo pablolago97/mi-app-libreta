@@ -6,9 +6,10 @@
 package mi.app.libreta;
 
 /**
- *
+ *Indica 'getters' y 'setters'
  * @author Pablo
  */
+ 
 public class Contacto {
     public static int ncontactos=1;
     private int id;
@@ -16,11 +17,18 @@ public class Contacto {
     private String apellidos;
     private Grupo grupo;
     
+    /**
+     * Constructor
+     */
     public Contacto(){
         id=ncontactos;
         ncontactos++;
     }
-    
+    /**
+     * Constructor
+     * @param nombre
+     * @param apellidos 
+     */
     public Contacto(String nombre,String apellidos){
         id=ncontactos;
         this.nombre=nombre;
