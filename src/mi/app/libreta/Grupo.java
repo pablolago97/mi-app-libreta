@@ -14,22 +14,42 @@ public class Grupo {
     private String nombre;
     private Contacto[] contactos;
     
+    /**
+     *
+     * @param nombre
+     */
     public Grupo(String nombre){
         this.nombre=nombre;
     }
 
+    /**
+     *recoger nombre
+     * @return
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     *poner nombre
+     * @param nombre
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    /**
+     *
+     * @return
+     */
     public Contacto[] getContactos() {
         return contactos;
     }
 
+    /**
+     *
+     * @param contactos
+     */
     public void setContactos(Contacto[] contactos) {
         this.contactos = contactos;
     }

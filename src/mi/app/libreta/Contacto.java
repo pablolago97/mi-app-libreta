@@ -11,6 +11,10 @@ package mi.app.libreta;
  */
  
 public class Contacto {
+
+    /**
+     *
+     */
     public static int ncontactos=1;
     private int id;
     private String nombre;
@@ -36,43 +40,83 @@ public class Contacto {
         ncontactos++;
     }
 
-   
+    /**
+     *Recoger parametro id
+     * @return
+     */
     public int getId(){
         return id;
     }
     
+    /**
+     *Poner parametro id
+     * @param id
+     * @return
+     */
     public int setId(int id){
          return this.id=id;
     }
 
+    /**
+     *Recoger parametro ncontactos
+     * @return
+     */
     public int getNcontactos() {
         return ncontactos;
     }
 
+    /**
+     *poner parametro ncontactos
+     * @param ncontactos
+     */
     public void setNcontactos(int ncontactos) {
         Contacto.ncontactos = ncontactos;
     }
 
+    /**
+     *Recoger parametro nombre
+     * @return
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     *Introducir parametro nombre
+     * @param nombre
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    /**
+     *Recoger parametro apellidos
+     * @return
+     */
     public String getApellidos() {
         return apellidos;
     }
 
+    /**
+     *Introducir parametro apellidos
+     * @param apellidos
+     */
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
 
+    /**
+     *Recoger parametro grupo
+     * @return
+     */
     public Grupo getGrupo() {
         return grupo;
     }
 
+    /**
+     *Introducir parametro grupo
+     * @param grupo
+     */
     public void setGrupo(Grupo grupo) {
         this.grupo = grupo;
     }
